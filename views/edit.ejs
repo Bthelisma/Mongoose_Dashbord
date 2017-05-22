@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Animal</title>
+  </head>
+  <body>
+    <h2>Edit this specific animal</h2>
+
+
+    <form action='/animal/<%= animal._id %>' method='post' style="width:90%; margin: 0 auto;">
+      <label for='name'>Name:</label>
+      <input type = 'text' class="form-control" name = 'name'value="<%=animal.name %>"><br><br>
+      <label for='type'>Type:</label>
+      <input type = 'text' class="form-control" name = 'type' value="<%= animal.type %>"><br><br>
+      <label for='description'>Description:</label>
+      <input type= 'text' class="form-control" name="description" value="<%= animal.description %>"></input><br>
+      <input type='submit' value='Edit'>
+    </form>
+
+  </body>
+</html>
